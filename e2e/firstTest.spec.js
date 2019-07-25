@@ -1,7 +1,13 @@
 const { reloadApp } = require("detox-expo-helpers");
+const { takeScreenshot } = require("./helpers");
+
 describe("Example", () => {
   beforeEach(async () => {
     await reloadApp();
+  });
+
+  afterEach(async () => {
+    takeScreenshot();
   });
 
   it("should have welcome screen", async () => {

@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest",
+    "detox-test": "detox test --configuration ios.sim && detox test --configuration ipad.sim"
   },
   "dependencies": {
     "expo": "^33.0.0",
@@ -31,6 +32,11 @@
         "binaryPath": "bin/Exponent.app",
         "type": "ios.simulator",
         "name": "iPhone X"
+      },
+      "ipad.sim": {
+        "binaryPath": "bin/Exponent.app",
+        "type": "ios.simulator",
+        "name": "iPad Air"
       }
     }
   }
