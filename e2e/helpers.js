@@ -1,6 +1,6 @@
 const { execSync } = require("child_process");
 const { existsSync, mkdirSync } = require("fs");
-//Change dir
+
 const SCREENSHOT_DIR = "/screenshots";
 
 const SCREENSHOT_OPTIONS = {
