@@ -1,7 +1,7 @@
 const { execSync } = require("child_process");
 const { existsSync, mkdirSync } = require("fs");
 
-const SCREENSHOT_DIR = "/tmp/screenshots";
+const SCREENSHOT_DIR = "/screenshots";
 
 const SCREENSHOT_OPTIONS = {
   timeout: 1000,
